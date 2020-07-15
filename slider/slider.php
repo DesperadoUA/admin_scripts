@@ -5,7 +5,7 @@ add_action( 'add_meta_boxes', 'service_add_custom_box_slider' );
 function service_add_custom_box_slider() {
 	$screens = array( 'post' );
 	add_meta_box( 'service_section_slider_id',
-		         'Картинки для слайдера',
+		         'Для вставки слайдера пропишите установите [slider] в желаемом месте вывода',
 		      'service_meta_box_slider_callback',
 		              $screens );
 }

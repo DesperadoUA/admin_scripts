@@ -72,10 +72,12 @@ function ready() {
 
 			if(sliderItem) {
 				sliderItem.forEach(item => {
-					sliderData.push({
-						'id': item.querySelector('.slider_item').value,
-						'url': item.querySelector('.slider_item_img').src
-					})
+					if(item.querySelector('.slider_item').value !== '') {
+						sliderData.push({
+							'id': item.querySelector('.slider_item').value,
+							'url': item.querySelector('.slider_item_img').src
+						})
+					}
 				})
 			}
 
